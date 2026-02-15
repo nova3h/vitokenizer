@@ -17,7 +17,7 @@ The lib is ES6 only, use `dev` branch 'cause the latest code is there.
 ### New Methods
 Tokenize a string for FTS:
 ```
-import vitokenizer from "vitokenizer/src/index.js";
+import vitokenizer from "vitokenizer/dist/main.js";
 var Tokens = vitokenizer.get_fts_words(Str);
 ```
 
@@ -26,13 +26,15 @@ These old methods are __**deprecated**__ which may result in non-dictionary word
 
 Tokenize a string for FTS:
 ```
-import vitokenizer from "vitokenizer/src/index.js";
+// This method is disabled
+import vitokenizer from "vitokenizer/dist/main.js";
 var Tokens = vitokenizer.get_fts_tokens(Str);
 ```
 
 Tokenize a string for grammar:
 ```
-import vitokenizer from "vitokenizer/src/index.js";
+// This method is disabled
+import vitokenizer from "vitokenizer/dist/main.js";
 var Tokens = vitokenizer.get_grammar_tokens(Str);
 ```
 
