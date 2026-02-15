@@ -230,6 +230,8 @@ class vitokenizer {
     }
 }
  
+window.vitokenizer = vitokenizer;
+window.vitok = vitokenizer;
 const thisclass = vitokenizer;
 export default thisclass;
 // EOF
