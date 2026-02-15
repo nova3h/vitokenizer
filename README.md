@@ -4,9 +4,8 @@ Vi-Tokenizer
 Description
 -----------
 
-**Vietnamese Tokenizer** for **JavaScript**, with both modes to tokenize
-for __grammar__ (no overlapping syllables) and for __FTS__ (Full-text Search,
-allows overlapping syllables of tokens).
+Vi-Tokenizer, a very light-weight (700KB) and efficient Vietnamese tokenizer in JS, 
+good to use especially for full-text search.
 
 
 Usage
