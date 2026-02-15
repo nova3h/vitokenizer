@@ -9,6 +9,24 @@ for __grammar__ (no overlapping syllables) and for __FTS__ (Full-text Search,
 allows overlapping syllables of tokens).
 
 
+Usage
+-----
+
+The lib is ES6 only.
+<br><br>
+Tokenize a string for FTS:
+```
+import vitokenizer from "vitokenizer/index.js";
+var Tokens = vitokenizer.get_fts_tokens(Str);
+```
+
+Tokenize a string for grammar:
+```
+import vitokenizer from "vitokenizer/index.js";
+var Tokens = vitokenizer.get_grammar_tokens(Str);
+```
+
+
 The Algorithm
 -------------
 
