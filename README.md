@@ -12,9 +12,11 @@ allows overlapping syllables of tokens).
 Usage
 -----
 
-The lib is ES6 only, use `dev` branch 'cause the latest code is there.
+The lib is avail for both ES6 import and script tag, 
+use `dev` branch 'cause the latest code is there.
 
-### New Methods
+
+### How to Use in ES6
 Tokenize a string for FTS:
 ```
 import vitokenizer from "vitokenizer/dist/main.js";
@@ -23,6 +25,21 @@ var Words = vitokenizer.get_fts_words(Str);
 // 1) Use it for FTS index
 // 2) Or use it as FTS search terms
 ```
+
+
+### How to Use with Script Tag
+```
+<!-- Required charset -->
+<meta charset="utf-8">
+<!-- Load lib -->
+<script src="vitokenizer/dist/main.js"></script>
+
+<script>
+// Lib available at window.vitok
+alert(window.vitok.get_fts_words("Chợ hoa lớn nhất Hà Nội nhộn nhịp đêm cuối năm"));
+</script>
+```
+
 
 ### Old Methods
 These old methods are __**deprecated**__ which may result in non-dictionary words.
