@@ -30,7 +30,10 @@ The Pros:
 
 The Cons:
   - Can't be perfect when it's related to meaning
-  - eg. bàn ăn tối -> [bàn ăn]+[tối]=Correct, or [bàn]+[ăn tối]=Wrong
+  - eg. bàn ăn tối<br>
+    bàn ăn -> Good score<br>
+    ăn tối -> Good score<br>
+    [bàn ăn]+[tối]=Correct, or [bàn]+[ăn tối]=Wrong
 
 
 The Licence
