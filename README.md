@@ -13,34 +13,61 @@ Usage
 -----
 
 The lib is ES6 only, use `dev` branch 'cause the latest code is there.
-<br><br>
+
+### New Methods
 Tokenize a string for FTS:
 ```
-import vitokenizer from "vitokenizer/index.js";
+import vitokenizer from "vitokenizer/src/index.js";
+var Tokens = vitokenizer.get_fts_words(Str);
+```
+
+### Old Methods
+These old methods are __**deprecated**__ which may result in non-dictionary words.
+
+Tokenize a string for FTS:
+```
+import vitokenizer from "vitokenizer/src/index.js";
 var Tokens = vitokenizer.get_fts_tokens(Str);
 ```
 
 Tokenize a string for grammar:
 ```
-import vitokenizer from "vitokenizer/index.js";
+import vitokenizer from "vitokenizer/src/index.js";
 var Tokens = vitokenizer.get_grammar_tokens(Str);
 ```
 
 
-The Algorithm
--------------
+The Algorithm of New Methods
+----------------------------
+
+Complexity:
+  - JS object is hash-table, ~O(1)
+  - This algo: O(inpStrLen) * Hashlookup
+
+Steps:
+  - Scan input string from left (always skip 1 for max matchings)
+      - Conditions to store: __tri/bi-gram in dict, or strange__ syllables.
+  - Check tri-gram in dictionary, found? 
+      - STORE tri-gram, and skip 1 syllable.
+  - Check bi-gram in dictionary, found? 
+      - STORE bi-gram, and skip 1 syllable.
+  - No tri-gram nor bi-gram?
+      - Is syllable to skip (eg. 'và')? no storing, skip 1 syllable.
+      - Syllable not in dictionary? STORE mono-gram, skip 1 syllable.
+      - Last case here: no storing, skip 1 syllable.
+
+
+The Algorithm of Old Methods
+----------------------------
 
 Data:
   - All syllable list
   - Scored frequency list of 2 adjacent syllables
 
 Algo:
-  - For each syllable, get the scores with left syllable & right syllable to decide
-  - 4 dicisions:
-      - No joining with both left and right syllables
-      - Join with left syllable only
-      - Join with right syllable only
-      - Join with both syllables
+  - For each syllable, skip joining if to be single syll, eg. 'và'
+  - Get the score for the pair left syllable & right syllable to decide
+  - Join the 2 sylls if score is above threshold
    
 The Pros:
   - With scores is better than dictionary.has(...)
