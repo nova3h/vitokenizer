@@ -12,7 +12,7 @@ allows overlapping syllables of tokens).
 Usage
 -----
 
-The lib is ES6 only.
+The lib is ES6 only, use `dev` branch 'cause the latest code is there.
 <br><br>
 Tokenize a string for FTS:
 ```
