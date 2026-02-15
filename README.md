@@ -18,7 +18,10 @@ The lib is ES6 only, use `dev` branch 'cause the latest code is there.
 Tokenize a string for FTS:
 ```
 import vitokenizer from "vitokenizer/dist/main.js";
-var Tokens = vitokenizer.get_fts_words(Str);
+var Words = vitokenizer.get_fts_words(Str);
+// Now the word list is available
+// 1) Use it for FTS index
+// 2) Or use it as FTS search terms
 ```
 
 ### Old Methods
