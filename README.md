@@ -36,6 +36,7 @@ var Words = vitokenizer.get_fts_words(Str);
 <script>
 // Lib available at window.vitok
 alert(window.vitok.get_fts_words("Chợ hoa lớn nhất Hà Nội nhộn nhịp đêm cuối năm"));
+// -> ["chợ", "hoa", "lớn nhất", "hà nội", "nhộn nhịp", "đêm", "cuối năm"]
 </script>
 ```
 
