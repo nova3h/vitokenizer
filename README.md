@@ -106,5 +106,5 @@ The Cons:
 The Licence
 -----------
 
-Creative Commons.<br>
+General Public Licence v3.<br>
 by Novaeh Team.
