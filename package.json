@@ -1,0 +1,30 @@
+{
+  "name": "vitokenizer",
+  "version": "1.0.0",
+  "description": "Vietnamese Tokenizer for JS to fill the gap that Intl.Segmentor doesn't combine Vietnamese syllables to words.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nova3h/vitokenizer.git"
+  },
+  "keywords": [
+    "vietnamese",
+    "tokenizer",
+    "segmentor",
+    "js",
+    "viet",
+    "languages",
+    "localization",
+    "nlp",
+    "words"
+  ],
+  "author": "Novaeh Team",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nova3h/vitokenizer/issues"
+  },
+  "homepage": "https://github.com/nova3h/vitokenizer#readme"
+}
