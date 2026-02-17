@@ -1,0 +1,2 @@
+// Ignored words, mainly single syllables
+export default ["hẳn là","bởi vì","cái gì","ở","phải",'ai', 'bị', 'cho', 'con', 'cái', 'của', 'dưới', 'gì', 'hay', 'hoặc', 'hả', "ko", "không",'là', 'mà', 'mày', 'ngoài', 'nhé', 'nhưng', "những", 'nhỉ', "nhiều",'nên', 'nó', 'sẽ', 'tao', 'thì', 'trong', 'trái', 'trên', 'tôi', 'từ', 'và', 'vì', 'với', 'à', 'đang', 'đâu', 'đã', 'được', 'đấy', 'ư', 'ạ'];
