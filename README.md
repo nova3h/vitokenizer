@@ -7,6 +7,11 @@ Description
 Vi-Tokenizer, a very light-weight (700KB) and efficient Vietnamese tokenizer in JS, 
 good to use especially for full-text search.
 
+The cause: Intl.Segmentor works well with all languages except Vietnamese, which
+the Segmentor happily splits by space and without combining syllables. Vi-Tokenizer
+solves the issue by providing a light-weight lib to get words in text by 
+combining syllables to match dictionary.
+
 
 Usage
 -----
